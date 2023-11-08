@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Automation Test]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.automation.listeners.ExtentListeners"/>
+  </listeners>
+  <test parallel="methods" name="Automation - Tests(failed)">
+    <classes>
+      <class name="com.automation.test.AmazonTest">
+        <methods>
+          <include name="afterSuiteFlush"/>
+          <include name="AutomateAmazonTest"/>
+        </methods>
+      </class> <!-- com.automation.test.AmazonTest -->
+    </classes>
+  </test> <!-- Automation - Tests(failed) -->
+</suite> <!-- Failed suite [Automation Test] -->

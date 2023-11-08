@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT"
+	name="Automation Test">
+	<listeners>
+		<listener class-name="com.automation.listeners.ExtentListeners" />
+		
+	</listeners>
+	<test verbose="2" preserve-order="true"
+		name="Automation - Tests" thread-count="1"
+		parallel="methods">
+		
+		<classes>
+			<class name="com.automation.test.AmazonTest" />
+		</classes>
+	</test>
+</suite>
